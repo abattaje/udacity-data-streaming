@@ -4,7 +4,6 @@ from pyspark.sql import SparkSession
 from pyspark.sql.types import *
 import pyspark.sql.functions as psf
 
-# TODO Create a schema for incoming resources
 schema = StructType([
     StructField("crime_id", StringType(), True),
     StructField("original_crime_type_name", StringType(), True),
@@ -24,7 +23,6 @@ schema = StructType([
 
 
 def run_spark_job(spark):
-    # TODO Create Spark Configuration
     # Create Spark configurations with max offset of 200 per trigger
     # set up correct bootstrap server and port
     df = spark \
