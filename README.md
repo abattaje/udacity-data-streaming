@@ -7,3 +7,11 @@ This is the number of concurrent tasks that can be run in an executor. Each task
    
 #### 2. spark.dynamicAllocation.enabled
 Setting this to "true" allocates executors on need basis depending on the load. If more data is generated in Kafka, we can spin up more executors on-demand which results in increased partitions
+
+
+I have used below config which seems to be optimal for me
+
+spark.executor.cores=4
+spark.dynamicAllocation.enabled=True
+spark.driver.memory=16g
+spark.executor.memory=16g
