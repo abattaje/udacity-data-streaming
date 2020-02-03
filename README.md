@@ -11,7 +11,7 @@ Setting this to "true" allocates executors on need basis depending on the load. 
 
 I have used below config which seems to be optimal for me
 
-spark.executor.cores=4
-spark.dynamicAllocation.enabled=True
-spark.driver.memory=16g
-spark.executor.memory=16g
+#### spark.executor.cores=4
+#### spark.dynamicAllocation.enabled=true
+#### spark.driver.memory=16g
+#### spark.executor.memory=16g
